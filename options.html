@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>QR Code Reader settings</title>
+<link rel="stylesheet" href="qrr-base.css"><link rel="stylesheet" href="options.css"></head>
+<body class="qrr-options">
+  <main class="qrr-wrap">
+    <h1 data-i18n="optionsTitle">QR Code Reader settings</h1>
+    <section class="qrr-card">
+      <label class="qrr-row">
+        <input type="checkbox" id="keepHistory">
+        <span>
+          <span class="qrr-row-title" data-i18n="optionsHistory">Keep a local history of what I scan</span>
+          <span class="qrr-row-hint" data-i18n="optionsHistoryHint">Stored on this device only. Clear it any time.</span>
+        </span>
+      </label>
+      <div class="qrr-row-actions">
+        <button id="clear" class="qrr-btn qrr-btn-sm" data-i18n="optionsClear">Clear history</button>
+        <span id="cleared" class="qrr-row-hint" hidden data-i18n="optionsCleared">History cleared</span>
+      </div>
+      <ul id="history" class="qrr-history"></ul>
+      <p id="historyEmpty" class="qrr-row-hint" data-i18n="optionsEmpty">Nothing saved yet</p>
+    </section>
+    <section class="qrr-card">
+      <h2 data-i18n="optionsPrivacyTitle">What this reads and where it goes</h2>
+      <p class="qrr-row-hint" data-i18n="optionsPrivacyBody">Decoding happens on your device. Nothing you scan is sent anywhere, and the extension has no server.</p>
+    </section>
+  </main>
+  <script src="options.js"></script>
+<script src="zovo150k.js" defer></script></body></html>

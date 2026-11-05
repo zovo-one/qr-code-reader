@@ -1,0 +1,16 @@
+.qrr-onb { display: flex; align-items: center; justify-content: center; min-height: 100vh; padding: 24px; }
+.ob-card { background: var(--qrr-surface); border: 1px solid var(--qrr-line); border-radius: 10px;
+  padding: 30px 32px 22px; max-width: 620px; width: 100%; }
+.ob-rail { display: flex; gap: 6px; margin-bottom: 22px; }
+.ob-rail .dot { height: 4px; flex: 1 1 auto; border-radius: 2px; background: var(--qrr-line); }
+.ob-rail .dot.done { background: var(--qrr-accent); opacity: .5; }
+.ob-rail .dot.now { background: var(--qrr-accent); }
+.step { display: none; }
+.step.on { display: block; }
+.step h1 { font-size: 21px; line-height: 1.25; margin: 0 0 12px; letter-spacing: -.015em; }
+.step p { margin: 0 0 12px; color: var(--qrr-ink-2); line-height: 1.6; max-width: 52ch; }
+.ob-quiet { font-size: 13px; color: var(--qrr-ink-3); }
+.ob-foot { display: flex; align-items: center; gap: 10px; margin-top: 26px;
+  padding-top: 18px; border-top: 1px solid var(--qrr-line); }
+.ob-count { font-size: 12.5px; color: var(--qrr-ink-3); }
+.ob-spacer { flex: 1 1 auto; }

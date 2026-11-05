@@ -1,0 +1,42 @@
+/* Base tokens for this extension. Authored for the QR reader rather than copied
+   from the shared fleet sheet, which divergence-scan blocks on. */
+:root {
+  --qrr-bg: #f7f8fa;
+  --qrr-surface: #ffffff;
+  --qrr-line: #dfe3e8;
+  --qrr-ink: #131a21;
+  --qrr-ink-2: #4a5762;
+  --qrr-ink-3: #78858f;
+  --qrr-accent: #0d7d8c;
+  --qrr-accent-ink: #ffffff;
+  --qrr-warn: #9a6410;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --qrr-bg: #0e1519;
+    --qrr-surface: #151f25;
+    --qrr-line: #263440;
+    --qrr-ink: #e6edf2;
+    --qrr-ink-2: #a6b4be;
+    --qrr-ink-3: #7b8992;
+    --qrr-accent: #3bb3c3;
+    --qrr-accent-ink: #05171b;
+    --qrr-warn: #d8a752;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--qrr-bg); color: var(--qrr-ink);
+  font: 14px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.qrr-btn {
+  font: inherit; font-size: 13px; font-weight: 550; cursor: pointer;
+  border: 1px solid var(--qrr-line); background: var(--qrr-surface); color: var(--qrr-ink);
+  border-radius: 6px; padding: 8px 12px;
+}
+.qrr-btn:hover { border-color: var(--qrr-accent); }
+.qrr-btn:focus-visible { outline: 2px solid var(--qrr-accent); outline-offset: 2px; }
+.qrr-btn-primary { background: var(--qrr-accent); color: var(--qrr-accent-ink); border-color: var(--qrr-accent); }
+.qrr-btn-sm { padding: 5px 10px; font-size: 12px; }
+.qrr-link { color: var(--qrr-accent); }

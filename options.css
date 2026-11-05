@@ -1,0 +1,14 @@
+.qrr-options { padding: 32px 20px 60px; }
+.qrr-wrap { max-width: 640px; margin: 0 auto; }
+.qrr-wrap h1 { font-size: 20px; letter-spacing: -.01em; margin: 0 0 20px; }
+.qrr-wrap h2 { font-size: 15px; margin: 0 0 8px; }
+.qrr-card { background: var(--qrr-surface); border: 1px solid var(--qrr-line);
+  border-radius: 8px; padding: 18px 20px; margin-bottom: 16px; }
+.qrr-row { display: flex; gap: 12px; align-items: flex-start; cursor: pointer; }
+.qrr-row input { margin-top: 3px; }
+.qrr-row-title { display: block; font-weight: 550; font-size: 14px; }
+.qrr-row-hint { display: block; font-size: 12.5px; color: var(--qrr-ink-3); line-height: 1.5; }
+.qrr-row-actions { display: flex; align-items: center; gap: 10px; margin-top: 14px; }
+.qrr-history { list-style: none; margin: 14px 0 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.qrr-history li { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 12px;
+  word-break: break-all; padding: 8px 10px; border: 1px solid var(--qrr-line); border-radius: 5px; }

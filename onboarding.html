@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>QR Code Reader</title>
+<link rel="stylesheet" href="qrr-base.css">
+<link rel="stylesheet" href="onboarding.css">
+</head>
+<body class="qrr-onb">
+  <main class="ob-card">
+    <div class="ob-rail" id="rail"></div>
+
+    <section class="step on">
+      <h1>It reads the codes already on the page</h1>
+      <p>Open any page with a QR code and click the toolbar button. You get every
+        code on that page, not just the first one, with the decoded text in front
+        of you.</p>
+      <p class="ob-quiet">Codes inside an image, inside a canvas, or set as a CSS
+        background are all read from the original picture rather than from a
+        screenshot, so small codes still come out clean.</p>
+    </section>
+
+    <section class="step">
+      <h1>When a code is not on the page, draw a box</h1>
+      <p>Click Select an area and drag a box around anything on screen. That
+        reaches codes a page scan cannot, like a frame of a video or a code
+        inside a PDF viewer.</p>
+      <p class="ob-quiet">Press Escape to cancel a selection.</p>
+    </section>
+
+    <section class="step">
+      <h1>It never opens a link by itself</h1>
+      <p>A QR code can point anywhere, so this one shows you the address and
+        waits. Nothing is followed automatically and there is no countdown.
+        You click when you are ready.</p>
+      <p class="ob-quiet">Decoding happens on your device. There is no account and
+        no server, and history stays off until you switch it on in settings.</p>
+    </section>
+
+    <footer class="ob-foot">
+      <button id="back" class="qrr-btn">Back</button>
+      <span class="ob-count" id="stepno">1 of 3</span>
+      <span class="ob-spacer"></span>
+      <button id="skip" class="qrr-btn">Skip</button>
+      <button id="next" class="qrr-btn qrr-btn-primary">Next</button>
+    </footer>
+  </main>
+  <script src="onboarding.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+{
+  "extName": { "message": "QR Code Reader and Scanner", "description": "Extension name." },
+  "extDesc": {
+    "message": "Read every QR code on a page, including images and canvas. Decodes on your device and never opens a link on its own.",
+    "description": "Extension description. Single purpose, CWS listing summary, must stay under 132 chars."
+  },
+  "actionTitle": { "message": "Read QR codes on this page", "description": "Toolbar action tooltip." },
+
+  "popupScanPage": { "message": "Scan this page", "description": "Primary button in the popup." },
+  "popupSelectArea": { "message": "Select an area", "description": "Secondary button, starts the drag-to-select region reader." },
+  "popupScanning": { "message": "Reading the page", "description": "Status while a scan is running." },
+  "popupNoneFound": { "message": "No QR code found on this page", "description": "Empty state after a scan that found nothing." },
+  "popupNoneHint": { "message": "Try Select an area and drag a box around the code.", "description": "Hint shown under the empty state." },
+  "popupFoundOne": { "message": "Found 1 code", "description": "Result header when exactly one code was decoded." },
+  "popupFoundMany": { "message": "Found $1 codes", "description": "Result header for more than one code. $1 = count." },
+  "popupCopy": { "message": "Copy", "description": "Copies a decoded value to the clipboard." },
+  "popupCopied": { "message": "Copied", "description": "Confirmation after copying." },
+  "popupOpen": { "message": "Open link", "description": "Opens a decoded URL. Requires an explicit click, never automatic." },
+  "popupOpenWarn": { "message": "Check the address before you open it.", "description": "Shown beside a decoded URL." },
+  "popupSourceImage": { "message": "image", "description": "Label for a code found in an img element." },
+  "popupSourceCanvas": { "message": "canvas", "description": "Label for a code found in a canvas element." },
+  "popupSourceBackground": { "message": "background", "description": "Label for a code found in a CSS background image." },
+  "popupSourceSelection": { "message": "selection", "description": "Label for a code found in a user-selected area." },
+  "popupRestricted": { "message": "This page cannot be read", "description": "Shown on chrome:// and Web Store pages where extensions cannot run." },
+  "popupRestrictedHint": { "message": "Chrome blocks extensions on its own pages. Open a normal web page and try again.", "description": "Hint under the restricted state." },
+
+  "selectHint": { "message": "Drag a box around the code. Press Escape to cancel.", "description": "Overlay instruction during area select." },
+  "selectTooSmall": { "message": "That area is too small to read", "description": "Shown when the dragged box is under the minimum size." },
+
+  "optionsTitle": { "message": "QR Code Reader settings", "description": "Options page heading." },
+  "optionsHistory": { "message": "Keep a local history of what I scan", "description": "Toggle label. Off by default." },
+  "optionsHistoryHint": { "message": "Stored on this device only. Clear it any time.", "description": "Hint under the history toggle." },
+  "optionsClear": { "message": "Clear history", "description": "Button that empties the local history." },
+  "optionsCleared": { "message": "History cleared", "description": "Confirmation after clearing." },
+  "optionsEmpty": { "message": "Nothing saved yet", "description": "Empty state for the history list." },
+  "optionsPrivacyTitle": { "message": "What this reads and where it goes", "description": "Privacy section heading on the options page." },
+  "optionsPrivacyBody": { "message": "Decoding happens on your device. Nothing you scan is sent anywhere, and the extension has no server.", "description": "Privacy section body." }
+}

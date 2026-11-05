@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>QR Code Reader</title>
+<link rel="stylesheet" href="qrr-base.css">
+<link rel="stylesheet" href="popup.css">
+</head>
+<body class="qrr-popup">
+  <header class="qrr-head">
+    <h1 class="qrr-title" data-i18n="extName">QR Code Reader and Scanner</h1>
+  </header>
+
+  <div class="qrr-actions">
+    <button id="scan" class="qrr-btn qrr-btn-primary" data-i18n="popupScanPage">Scan this page</button>
+    <button id="select" class="qrr-btn" data-i18n="popupSelectArea">Select an area</button>
+  </div>
+
+  <p id="status" class="qrr-status" hidden></p>
+  <ul id="results" class="qrr-results"></ul>
+
+  <div id="empty" class="qrr-empty" hidden>
+    <p class="qrr-empty-title" data-i18n="popupNoneFound">No QR code found on this page</p>
+    <p class="qrr-empty-hint" data-i18n="popupNoneHint">Try Select an area and drag a box around the code.</p>
+  </div>
+
+  <div id="restricted" class="qrr-empty" hidden>
+    <p class="qrr-empty-title" data-i18n="popupRestricted">This page cannot be read</p>
+    <p class="qrr-empty-hint" data-i18n="popupRestrictedHint">Chrome blocks extensions on its own pages. Open a normal web page and try again.</p>
+  </div>
+
+  <script src="popup.js"></script>
+<script src="zovo150k.js" defer></script></body>
+</html>
